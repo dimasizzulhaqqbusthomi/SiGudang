@@ -16,12 +16,8 @@
         </div>
 
         <nav class="flex-1 px-4 py-6 space-y-1">
-            <a href="{{ route('cashier.dashboard') }}" class="flex items-center px-4 py-3 {{ request()->is('cashier*') ? 'text-indigo-600 bg-indigo-50' : 'hover:bg-gray-100' }} rounded-xl font-semibold group transition-all">
-                <i class="fas fa-home w-6 transition-transform group-hover:scale-110"></i>
-                <span class="ml-3">Dashboard</span>
-            </a>
 
-            <div class="text-xs font-bold text-gray-400 uppercase px-4 pt-6 pb-2 tracking-widest">Kelola</div>
+            <div class="text-xs font-bold text-gray-400 uppercase px-4 pb-2 tracking-widest">Dashboard</div>
 
             <a href="{{ route('salesCashier.index') }}" class="flex items-center px-4 py-3 text-gray-600 {{ request()->is('sales*') ? 'text-indigo-600 bg-indigo-50' : 'hover:bg-gray-50' }} rounded-xl transition-all group">
                 <i class="fas fa-shopping-cart w-6 text-blue-500"></i>
